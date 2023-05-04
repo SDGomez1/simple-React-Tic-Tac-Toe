@@ -3,16 +3,31 @@ html {
 	text-align: center;
 	padding: 0;
 	margin: 0;
+	background: linear-gradient(
+		119.78deg,
+		#2ec2a0 0%,
+		rgba(31, 143, 118, 0.76) 100%
+	);
 }
-h1 {
-	font-size: 50px;
-}
+
 body {
 	font: 20px Helvetica, sans-serif;
 	color: #333;
 }
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+h1 {
+	font-size: 80px;
+	margin: 0;
+	color: white;
+}
 section {
-	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -30,7 +45,45 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
-	border: 1px solid black;
+	font-size: 50px;
+	border: 5px solid #284a5a;
 	cursor: pointer;
+	font-weight: bold;
+	color: white;
+	transition: 0.2s;
+}
+.square:hover {
+	scale: 1.1;
+}
+
+.TextCointainer {
+	min-width: 30vh;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.TextCointainer > div {
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+}
+
+.TextCointainer > button {
+	border: 2px solid #dedede;
+	background-color: transparent;
+	border-radius: 4px;
+	font-weight: bold;
+	height: 30px;
+	width: 40%;
+	color: white;
+	font-size: 14px;
+	transition: 0.2s;
+}
+.TextCointainer > button:hover {
+	color: black;
+	border-color: white;
+	background-color: white;
+	scale: 1.1;
 }

@@ -217,19 +217,22 @@ export default function Home() {
 
 	//Return of the React Component
 	return (
-		<section>
-			<div className='Board'>{createCells}</div>
-			<div>
-				<div className='status'>
-					{gameFinished ? winnerMessage() : `Next player: ${playerTurn}`}
+		<div className='main'>
+			<h1>Tic-Tac-Toe</h1>
+			<section>
+				<div className='Board'>{createCells}</div>
+				<div className='TextCointainer'>
+					<div className='status'>
+						{gameFinished ? winnerMessage() : `Next player: ${playerTurn}`}
+					</div>
+					<button
+						className='reset'
+						onClick={handleReset}
+					>
+						Reset{" "}
+					</button>
 				</div>
-				<button
-					className='reset'
-					onClick={handleReset}
-				>
-					Reset{" "}
-				</button>
-			</div>
-		</section>
+			</section>
+		</div>
 	);
 }
