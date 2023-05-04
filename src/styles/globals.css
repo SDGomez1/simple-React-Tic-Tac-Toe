@@ -1,0 +1,36 @@
+body,
+html {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-size: 50px;
+}
+body {
+	font: 20px Helvetica, sans-serif;
+	color: #333;
+}
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.Board {
+	height: 50vh;
+	width: 50vh;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	border: 1px solid black;
+	cursor: pointer;
+}
